@@ -1,0 +1,69 @@
+#nitesh {
+  width: 200px;
+  height: 200px;
+  margin-top: 7%;
+  float: left;
+  margin-right: 46%;
+  margin-bottom: 7%;
+  margin-left: 40%;
+}
+#nitesh .flip3d > .front {
+  border-radius:999px
+}
+#nitesh .flip3d > .back {
+  border-radius:999px
+}
+#nit-img img{
+  width:200px;
+  height:200px;
+  border-radius: 999px;
+}
+#detail-nit {
+  overflow: hidden;
+  position: relative;
+  top: 40%;
+  color: whitesmoke;
+  text-align: center;
+
+}
+.title , .detail {
+  top: 40%;
+  text-align: center;
+  position: relative;
+  color: whitesmoke;
+
+}
+
+.flip3d{ width :200px; height: 200px; margin:20px;  float: left;}
+.flip3d > .front {
+  position: absolute;
+  -webkit-transform: perspective( 600px ) rotateY( 0deg );
+  transform: perspective( 600px ) rotateY( 0deg );
+  background: #FC0; width:200px; height:200px; border-radius:9px;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  transition: -webkit-transform .5s linear 0s;
+  transition: transform .5s linear 0s;
+} 
+.flip3d > .back {
+  position: absolute;
+  -webkit-transform: perspective(600px) rotateY( 180deg );
+  transform: perspective(600px) rotateY( 180deg );
+  background:#000; width:200px; height:200px; border-radius:9px;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  transition: transform .5s linear 0s;
+  transition: -webkit-transform .5s linear 0s;
+}
+.flip3d:hover > .front {
+  -webkit-transform: perspective(600px) rotateY( -180deg );
+  transform: perspective(600px) rotateY( -180deg );
+}
+.flip3d:hover > .back {
+  -webkit-transform: perspective(600px) rotateY( 0deg );
+  transform: perspective(600px) rotateY( 0deg );
+}   
+#copyleft {
+  bottom: 0px;
+  text-align: center;
+}
